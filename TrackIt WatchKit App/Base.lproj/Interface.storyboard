@@ -25,7 +25,7 @@
                             </items>
                             <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="20"/>
                         </group>
-                        <button width="1" alignment="left" title="Track" id="O1w-8N-Wud">
+                        <button width="0.80000000000000004" alignment="center" title="Track" id="O1w-8N-Wud">
                             <color key="backgroundColor" red="0.0" green="0.58980089430000004" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             <connections>
                                 <action selector="trackWeight" destination="AgC-eL-Hgc" id="dks-tp-OIy"/>

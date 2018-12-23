@@ -9,16 +9,25 @@
 import WatchKit
 import Foundation
 
+func displayString(for weight: String) -> String {
+    return "\(weight) Kgs"
+}
+
+let weightKey = "weight"
 
 class InterfaceController: WKInterfaceController {
 
     @IBOutlet weak var weightDisplayLabel: WKInterfaceLabel!
+
+    var currentWeight: String?
 
 
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
         // Configure interface objects here.
+        currentWeight = DataManager.shared.fetchValue(for: weightKey)
+        weightDisplayLabel.setText(displayString(for: currentWeight ?? "Track It!"))
     }
     
     override func willActivate() {
@@ -39,10 +48,12 @@ class InterfaceController: WKInterfaceController {
             guard let newWeight = results?.first as? String else {return}
 
             // TDO: Validate and format the input before display
-            self.weightDisplayLabel.setText("\(newWeight) Kgs")
+            self.weightDisplayLabel.setText(displayString(for: newWeight))
 
             // Save the newly tracked weight against current date
+            let _ = DataManager.shared.save(value: newWeight, key: weightKey)
 
+            // TDO: Can throw alert for "failure" result
         }
     }
 
