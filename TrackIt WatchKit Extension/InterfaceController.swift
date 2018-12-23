@@ -12,6 +12,9 @@ import Foundation
 
 class InterfaceController: WKInterfaceController {
 
+    @IBOutlet weak var weightDisplayLabel: WKInterfaceLabel!
+
+
     override func awake(withContext context: Any?) {
         super.awake(withContext: context)
         
@@ -28,4 +31,20 @@ class InterfaceController: WKInterfaceController {
         super.didDeactivate()
     }
 
+    @IBAction func trackWeight() {
+
+        // Display weight input interface
+        presentTextInputController(withSuggestions: ["81.0","81.5","82.5","83.0"], allowedInputMode: .plain) { [unowned self] (results) in
+
+            guard let newWeight = results?.first as? String else {return}
+
+            // TDO: Validate and format the input before display
+            self.weightDisplayLabel.setText("\(newWeight) Kgs")
+
+            // Save the newly tracked weight against current date
+
+        }
+    }
+
+    
 }

@@ -23,6 +23,8 @@
 		399BE93021CE32E2000BC7D9 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399BE92F21CE32E2000BC7D9 /* NotificationController.swift */; };
 		399BE93221CE32E2000BC7D9 /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 399BE93121CE32E2000BC7D9 /* ComplicationController.swift */; };
 		399BE93421CE32E3000BC7D9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 399BE93321CE32E3000BC7D9 /* Assets.xcassets */; };
+		39BFFFE921CE488000F54044 /* WeightRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BFFFE821CE488000F54044 /* WeightRow.swift */; };
+		39BFFFEB21CF3FFF00F54044 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39BFFFEA21CF3FFF00F54044 /* DataManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -107,6 +109,8 @@
 		399BE93321CE32E3000BC7D9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		399BE93521CE32E3000BC7D9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		399BE93621CE32E3000BC7D9 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		39BFFFE821CE488000F54044 /* WeightRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeightRow.swift; sourceTree = "<group>"; };
+		39BFFFEA21CF3FFF00F54044 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +220,8 @@
 				399BE93321CE32E3000BC7D9 /* Assets.xcassets */,
 				399BE93521CE32E3000BC7D9 /* Info.plist */,
 				399BE93621CE32E3000BC7D9 /* PushNotificationPayload.apns */,
+				39BFFFE821CE488000F54044 /* WeightRow.swift */,
+				39BFFFEA21CF3FFF00F54044 /* DataManager.swift */,
 			);
 			path = "TrackIt WatchKit Extension";
 			sourceTree = "<group>";
@@ -438,9 +444,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				399BE93021CE32E2000BC7D9 /* NotificationController.swift in Sources */,
+				39BFFFEB21CF3FFF00F54044 /* DataManager.swift in Sources */,
 				399BE93221CE32E2000BC7D9 /* ComplicationController.swift in Sources */,
 				399BE92E21CE32E2000BC7D9 /* ExtensionDelegate.swift in Sources */,
 				399BE92C21CE32E2000BC7D9 /* InterfaceController.swift in Sources */,
+				39BFFFE921CE488000F54044 /* WeightRow.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

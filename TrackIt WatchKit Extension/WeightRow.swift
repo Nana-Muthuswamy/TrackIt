@@ -10,4 +10,5 @@ import WatchKit
 
 class WeightRow: NSObject {
 
+    @IBOutlet weak var weightLabel: WKInterfaceLabel!
 }
